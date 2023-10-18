@@ -1010,6 +1010,8 @@ class SuSyMaterials {
         public static Material StrontiumOxide;
         public static Material ImpureBariumSulfide;
         public static Material ImpureStrontiumSulfide;
+        public static Material SulfurVapor;
+        public static Material MoltenSulfur;
 
         // Second Degree Materials
 
@@ -1403,6 +1405,13 @@ class SuSyMaterials {
         public static Material Methyldichlorosilane;
         public static Material Chlorotrimethylsilane;
         public static Material DilutedSodiumCarbonateSolution;
+        public static Material OneOneOneThreeTetrachloropropane;
+        public static Material OneOneOneTwoThreePentachloropropane;
+        public static Material OneOneTwoThreeTetrachloropropene;
+        public static Material TrichloropropaneMixture;
+        public static Material TetrachloropropeneMixture;
+        public static Material CarbonylSulfide;
+        public static Material Triallate;
 
         // Third Degree Materials
 

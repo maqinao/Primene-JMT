@@ -3265,5 +3265,17 @@ public class FirstDegreeMaterials{
                 .components(Strontium, 1, Oxygen, 1)
                 .colorAverage()
                 .build();
+
+        MoltenSulfur = new Material.Builder(8578, SuSyUtility.susyId('molten_sulfur'))
+                .fluid()
+                .color(0xc89600)
+                .components(Sulfur, 1)
+                .build()
+
+        SulfurVapor = new Material.Builder(8579, SuSyUtility.susyId('sulfur_vapor'))
+                .fluid()
+                .color(0xf06400)
+                .components(Sulfur, 1)
+                .build()
     }
 }

@@ -1749,7 +1749,11 @@ susy.material.celestine_slurry=Celestine Slurry
 susy.material.impure_strontium_sulfide_slurry=Impure Strontium Sulfide Slurry
 susy.material.impure_strontium_sulfide=Impure Strontium Sulfide
 susy.material.diluted_sodium_carbonate_solution=Diluted Sodium Carbonate Solution
-
+susy.material.one_one_one_three_tetrachloropropane=1,1,1,3-Tetrachloropropane
+susy.material.one_one_one_two_three_pentachloropropane=1,1,1,2,3-Pentachloropropane
+susy.material.one_one_two_three_tetrachloropropene=1,1,2,3-Tetrachloropropene
+susy.material.trichloropropane_mixture=Trichloropropane Mixture
+susy.material.tetrachloropropene_mixture=Tetrachloropropene Mixture
 # Isotopes
 
 # GregTech RecipeMaps

@@ -1801,6 +1801,42 @@ public class OrganicChemistryMaterials {
                 .colorAverage()
                 .build();
 
-        
+        OneOneOneThreeTetrachloropropane = new Material.Builder(15292, SuSyUtility.susyId("one_one_one_three_tetrachloropropane"))
+                .fluid()
+                .components(Carbon, 3, Hydrogen, 4, Chlorine, 4)
+                .color(0xffffb0)
+                .build();
+
+        OneOneOneThreeTetrachloropropane.setFormula("C3H4Cl4", true)
+
+        OneOneOneTwoThreePentachloropropane = new Material.Builder(15293, SuSyUtility.susyId("one_one_one_two_three_pentachloropropane"))
+                .fluid()
+                .components(Carbon, 3, Hydrogen, 3, Chlorine, 5)
+                .color(0xf0f0f0)
+                .build();
+
+        OneOneOneTwoThreePentachloropropane.setFormula("C3H3Cl5", true)
+
+        OneOneTwoThreeTetrachloropropene = new Material.Builder(15294, SuSyUtility.susyId("one_one_two_three_tetrachloropropene"))
+                .fluid()
+                .components(Carbon, 3, Hydrogen, 2, Chlorine, 4)
+                .color(0xfafafa)
+                .build();
+
+        OneOneTwoThreeTetrachloropropene.setFormula("C3H2Cl4", true)
+
+        CarbonylSulfide = new Material.Builder(15295, SuSyUtility.susyId('carbonyl_sulfide'))
+                .fluid()
+                .components(Carbon, 1, Oxygen, 1, Sulfur, 1)
+                .color(0xe6e6e6)
+                .build()
+
+        Triallate = new Material.Builder(15296, SuSyUtility.susyId('triallate'))
+                .fluid()
+                .components(Carbon, 10, Hydrogen, 16, Chlorine, 3, Nitrogen, 1, Oxygen, 1, Sulfur, 1)
+                .color(0xffbf00)
+                .build()
+
+        Triallate.setFormula('C10H16Cl3NOS', true)
     }
 }

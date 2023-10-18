@@ -1838,6 +1838,16 @@ public class UnknownCompositionMaterials {
         RawPolydimethylsiloxaneMixture = new Material.Builder(4350, SuSyUtility.susyId("raw_polydimethylsiloxane_mixture"))
                 .fluid()
                 .color(0xf6f7f0)
-                .build();  
+                .build();
+
+        TrichloropropaneMixture = new Material.Builder(4362, SuSyUtility.susyId("trichloropropane_mixture"))
+                .fluid()
+                .color(0xf0f0f0)
+                .build()
+
+        TetrachloropropeneMixture = new Material.Builder(4363, SuSyUtility.susyId("tetrachloropropene_mixture"))
+                .fluid()
+                .color(0xf0f0f0)
+                .build()
     }
 }

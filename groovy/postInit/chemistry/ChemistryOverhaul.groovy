@@ -4670,5 +4670,89 @@ DISTILLERY.recipeBuilder()
         .duration(120)
         .EUt(30)
         .buildAndRegister()
+
+// sulfur vapor
+FLUID_EXTRACTOR.recipeBuilder()
+        .inputs(ore('dustSulfur') * 1)
+        .fluidOutputs(fluid('molten_sulfur') * 144)
+        .duration(20)
+        .EUt(7)
+        .buildAndRegister()
+
+FLUID_HEATER.recipeBuilder()
+        .fluidInputs(fluid('molten_sulfur') * 144)
+        .fluidOutputs(fluid('sulfur_vapor') * 1000)
+        .duration(20)
+        .EUt(7)
+        .buildAndRegister()
+
+// carbonyl sulfide US4078045A - Process for producing carbonyl sulfide
+BCR.recipeBuilder()
+        .notConsumable(ore('dustCalciumSulfide') * 1)
+        .fluidInputs(fluid('sulfur_vapor') * 50)
+        .fluidInputs(fluid('carbon_monoxide') * 50)
+        .fluidOutputs(fluid('carbonyl_sulfide') * 50)
+        .duration(8)
+        .EUt(480)
+        .buildAndRegister()
+
+
+// Triallate  https://www.thieme-connect.de/products/ejournals/abstract/10.1055/s-1981-29546
+TBR.recipeBuilder()
+        .notConsumable(ore('dustIron') * 1)
+        .notConsumable(fluid('triethyl_phosphate') * 1000)
+        .fluidInputs(fluid('carbon_tetrachloride') * 50)
+        .fluidInputs(fluid('ethylene') * 50)
+        .fluidOutputs(fluid('one_one_one_three_tetrachloropropane') * 50)
+        .duration(8)
+        .EUt(480)
+        .buildAndRegister()
+
+FBR.recipeBuilder()
+        .notConsumable(ore('catalystBedIronIiiChloride') * 1)
+        .fluidInputs(fluid('one_one_one_three_tetrachloropropane') * 1000)
+        .fluidOutputs(fluid('trichloropropane_mixture') * 1000)
+        .fluidOutputs(fluid('hydrogen_chloride') * 1000)
+        .duration(100)
+        .EUt(480)
+        .buildAndRegister()
+
+CSTR.recipeBuilder()
+        .fluidInputs(fluid('trichloropropane_mixture') * 50)
+        .fluidInputs(fluid('chlorine') * 100)
+        .fluidOutputs(fluid('one_one_one_two_three_pentachloropropane') * 50)
+        .duration(8)
+        .EUt(480)
+        .buildAndRegister()
+
+FBR.recipeBuilder()
+        .notConsumable(ore('catalystBedIronIiiChloride') * 1)
+        .fluidInputs(fluid('one_one_one_two_three_pentachloropropane') * 1000)
+        .fluidOutputs(fluid('tetrachloropropene_mixture') * 1000)
+        .fluidOutputs(fluid('hydrogen_chloride') * 1000)
+        .duration(100)
+        .EUt(480)
+        .buildAndRegister()
+
+FBR.recipeBuilder()
+        .notConsumable(ore('catalystBedIronIiiChloride') * 1)
+        .fluidInputs(fluid('tetrachloropropene_mixture') * 1000)
+        .fluidOutputs(fluid('one_one_two_three_tetrachloropropene') * 1000)// US20140221705A1 - Synthesis of 1,1,2,3-tetrachloropropene
+        .duration(100)
+        .EUt(480)
+        .buildAndRegister()
+
+LCR.recipeBuilder()
+        .fluidInputs(fluid('diisopropylamine') * 1000)
+        .fluidInputs(fluid('one_one_two_three_tetrachloropropene') * 1000)
+        .fluidInputs(fluid('carbonyl_sulfide') * 1000)
+        .fluidInputs(fluid('sodium_hydroxide') * 1000)
+        .fluidOutputs(fluid('triallate') * 1000)
+        .fluidOutputs(fluid('salt_water') * 1000)
+        .duration(600)
+        .EUt(480)
+        .buildAndRegister()
+
+// Primene-JMT(16,16-dimethylheptadecan-1-amine)   Can't read related article for synthesis information.
 		
 		

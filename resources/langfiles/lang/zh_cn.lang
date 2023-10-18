@@ -1729,7 +1729,11 @@ susy.material.hydrogen_silsesquioxane_solution=氢倍半硅氧烷（HSQ）溶液
 susy.material.trichlorosilane_solution=三氯硅烷溶液
 susy.material.tosylic_acid_solution=对甲苯磺酸溶液
 susy.material.hydrogen_silsesquioxane_photoresist=氢倍半硅氧烷（HSQ）光刻胶
-
+susy.material.one_one_one_three_tetrachloropropane=1,1,1,3-四氯丙烷
+susy.material.one_one_one_two_three_pentachloropropane=1,1,1,2,3-五氯丙烷
+susy.material.one_one_two_three_tetrachloropropene=1,1,2,3-四氯丙烯
+susy.material.trichloropropane_mixture=三氯丙烯混合物
+susy.material.tetrachloropropene_mixture=四氯丙烯混合物
 # Isotopes
 
 # GregTech RecipeMaps
